@@ -1,13 +1,198 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ol,ul{
+  list-style: none;
+}
+
+.body{
+  font-family: Roboto, Helvetica, Arial , sans-serif;
+  display: flex;
+  min-height: 100vh;
+}
+  
+.movie-section{
+  background: rgb(30, 41, 59);
+  color: rgb(248, 250, 252);
+  max-width: calc(100vw - 300px);
+  flex: 1 1 0% ;
+    
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  background: rgb(30, 41, 59);
+  padding: 1.5rem 2rem;
+  height: 4.5rem;
+  z-index: 1;
+}
+
+.header >h1{
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.nav-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0px;
+}
+
+.nav-list >li{
+  display: list-item;
+  text-align: center;
+}
+
+.nav-list >li >a{
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0px 0.5rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: rgb(14, 165, 233);
+}
+
+.nav-list >li >a:hover{
+  color: rgb(148, 163, 184);
+}
+
+.search-bar{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon{
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.icon{
+  height: 1.25rem;
+  width: 1.25rem;
+  color: rgb(148, 163, 184);
+}
+
+.search{
+  padding: 0.5rem 2.5rem;
+  background: rgb(30, 41, 59);
+  border-width: 0px 0px 2px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(51, 65, 85);
+  color: rgb(248, 250, 252);
+}
+
+.search:focus{
+  outline: none;
+}
+
+.movie-container{
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 0;
+  justify-content: center;
+}
+
+.movie-box{
+  margin: 1.5rem 2rem;
+  width: 13.5rem;
+}
+
+.movie{
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-image{
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.movie-info >h3{
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: rgb(14, 165, 233);
+  text-align: center;
+}
+
+.movie-info >h6{
+  margin-top: 0.25rem;
+  color: rgb(148, 163, 184);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+
+}
+
+.movie-overview{
+  background-color: #fff;
+  color: #22254b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem 1rem 0 1rem;
+  transform: translateY(105%);
+  transition: transform 0.3s ease-in-out;
+  max-height: 100%;
+  overflow: auto;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.movie:hover .movie-overview{
+  transform: translateY(0%);
+}
+
+.filter-section{
+  padding: 2rem 1.5rem;
+  position: fixed;
+  right: 0px;
+  height: 100%;
+  min-width: 300px;
+  color: rgb(148, 163, 184);
+  background: rgb(15, 23, 42);
+  box-shadow: rgb(0 0 0 / 10%) 0px 20px 25px -5px, 
+              rgb(0 0 0 / 4%) 0px 10px 10px -5px;
+}
+
+.filter-section >h3{
+  letter-spacing: 0.08rem;
+  font-size: 1.17rem;
+}
+
+.lable{
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin: 1.25rem 0px 0.75rem;
+}
+
+.selection{
+  background-color: rgb(9, 19, 32) !important;
+  border: 1px solid rgb(51, 65, 85) !important;
+  outline: 0px !important;
+  color: rgb(248, 250, 252) !important;
+}
+
+#from-year{
+  margin-bottom: 1rem;
 }
