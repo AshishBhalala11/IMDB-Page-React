@@ -28,7 +28,7 @@ function App() {
       const path = movie.poster_path;
       return (year >= 2000 && year <= 2021 && rating !== 0 && path !== null);
     })
-    console.log('movie list:', filteredResult);
+    // console.log('movie list:', filteredResult);
     setMovies(filteredResult);
   }
 
