@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 
 // const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=3a94078fb34b772a31d9a1348035bed7&query=";
 const MOVIE_API = "https://api.themoviedb.org/3/discover/movie?api_key=3a94078fb34b772a31d9a1348035bed7";

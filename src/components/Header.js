@@ -44,17 +44,17 @@ const Header = (props) => {
             <h1>Discover</h1>
             <nav>
                 <ul className="nav-list">
-                    <li>
-                        <a href="javascript:void(0)" onClick={()=> ActionClick(POPULAR_API)}>popular</a>
+                    <li >
+                        <span onClick={()=> ActionClick(POPULAR_API)}>popular</span>
+                    </li>
+                    <li >
+                        <span onClick={()=> ActionClick(NEWEST)}>newest</span>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" onClick={()=> ActionClick(NEWEST)}>newest</a>
+                        <span onClick={()=> ActionClick(TRENDING_API)}>trending</span>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" onClick={()=> ActionClick(TRENDING_API)}>trending</a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)" onClick={()=> ActionClick(TOP_RATED)}>top rated</a>
+                        <span onClick={()=> ActionClick(TOP_RATED)}>top rated</span>
                     </li>
                 </ul>
             </nav>
