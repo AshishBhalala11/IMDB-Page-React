@@ -23,7 +23,6 @@ function App() {
   const filterSeries = (myMovies) => {
     const filteredResult = myMovies.filter((movie) => {
       const year = new Date(movie.first_air_date).getFullYear();
-      const rating = movie.vote_average;
       const path = movie.poster_path;
       return (year >= 2000 && year <= 2021 && path !== null);
     })
