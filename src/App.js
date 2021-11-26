@@ -13,9 +13,8 @@ function App() {
   const searchMovies = (myMovies) => {
     const filteredResult = myMovies.filter((movie) => {
       const year = new Date(movie.release_date).getFullYear();
-      const rating = movie.vote_average;
       const path = movie.poster_path;
-      return (year >= 2000 && year <= 2021 && rating !== 0 && path !== null);
+      return (year >= 2000 && year <= 2021 && path !== null);
     })
     // console.log('movie list:', filteredResult);
     setMovies(filteredResult);
