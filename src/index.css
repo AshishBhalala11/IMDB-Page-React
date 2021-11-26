@@ -142,7 +142,7 @@ ol,ul{
 }
 
 .movie-overview{
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.87);
   color: #22254b;
   position: absolute;
   bottom: 0;
@@ -153,8 +153,8 @@ ol,ul{
   transition: transform 0.3s ease-in-out;
   max-height: 100%;
   overflow: auto;
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
 }
 
 .movie:hover .movie-overview{
