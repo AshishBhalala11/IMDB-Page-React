@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/IMDB-Page-React/static/css/main.0e07a702.chunk.css",
+    "main.css": "/IMDB-Page-React/static/css/main.6f2176ae.chunk.css",
     "main.js": "/IMDB-Page-React/static/js/main.416b7746.chunk.js",
     "main.js.map": "/IMDB-Page-React/static/js/main.416b7746.chunk.js.map",
     "runtime-main.js": "/IMDB-Page-React/static/js/runtime-main.09ea72a7.js",
@@ -12,14 +12,14 @@
     "static/js/3.0c69add3.chunk.js.map": "/IMDB-Page-React/static/js/3.0c69add3.chunk.js.map",
     "index.html": "/IMDB-Page-React/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/IMDB-Page-React/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.0e07a702.chunk.css.map": "/IMDB-Page-React/static/css/main.0e07a702.chunk.css.map",
+    "static/css/main.6f2176ae.chunk.css.map": "/IMDB-Page-React/static/css/main.6f2176ae.chunk.css.map",
     "static/js/2.06d69b49.chunk.js.LICENSE.txt": "/IMDB-Page-React/static/js/2.06d69b49.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.09ea72a7.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.06d69b49.chunk.js",
-    "static/css/main.0e07a702.chunk.css",
+    "static/css/main.6f2176ae.chunk.css",
     "static/js/main.416b7746.chunk.js"
   ]
 }
